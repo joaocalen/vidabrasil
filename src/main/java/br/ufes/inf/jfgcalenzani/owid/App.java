@@ -13,10 +13,6 @@ import org.apache.commons.csv.CSVRecord;
 
 import br.ufes.inf.jfgcalenzani.owid.BirthRecord;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public enum Headers {
@@ -26,7 +22,7 @@ public class App
     {
         Reader in = null;
         try {
-            in = new FileReader("female-and-male-life-expectancy-at-birth-in-years.csv");
+            in = new FileReader(args[0]);
         } catch (FileNotFoundException e) {            
             e.printStackTrace();
         }
